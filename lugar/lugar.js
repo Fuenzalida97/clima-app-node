@@ -21,13 +21,13 @@ const getLugarLatLng = async(dir) => {
     const dato = resp.data.data[0];
     const direccion = dato.name;
     const lat = dato.latitude;
-    const log = dato.longitude;
+    const lng = dato.longitude;
 
 
     return {
         direccion,
         lat,
-        log
+        lng
     }
 }
 
